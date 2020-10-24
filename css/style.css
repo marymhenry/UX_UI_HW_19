@@ -238,6 +238,22 @@ ul {
     border: 5px solid #FDD7D5;
 }
 
+#homeCards {
+    display: grid;
+    background-color: white;
+    color:#3A7262;
+    align-items: center;
+    margin: 25px;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "copyCatPhoto streetSmartPhoto kivaPhoto"; 
+}
+
+
+/** Responsive Code Below **/
+
 @media only screen and (max-width: 600px) {
     #bodySection {
         display: grid;
@@ -327,4 +343,19 @@ ul {
         width: 200px;
         justify-content: center;
     }
+    #homeCards {
+        display: grid;
+        background-color: white;
+        color:#3A7262;
+        align-items: center;
+        margin: 25px;
+        justify-content: space-around;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "copyCatPhoto"
+        "streetSmartPhoto"
+        "kivaPhoto"; 
+    }
 }
+
