@@ -1,8 +1,11 @@
 
 console.log ("Your index.js file has loaded correctly!");
 
-$("#mySkills").hover(function(){
-  $(this).css("background-color", "black")
+$(".menuItem").hover(
+  function(){
+  $(this).css("color", "black")
+}, function(){
+  $(this).css("color", "inherit")
 });
 
 
